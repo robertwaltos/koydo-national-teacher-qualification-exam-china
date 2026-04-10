@@ -1,0 +1,45 @@
+// National Teacher Qualification Exam China Configuration
+// Generated from top_200_exam_universe_seed.csv
+
+export const EXAM_CONFIG = {
+  examId: "EXAM073",
+  slug: "national-teacher-qualification-exam-china",
+  name: "National Teacher Qualification Exam China",
+  fullName: "NTCE",
+  alias: "NTCE",
+  family: "Teacher Qualification China",
+  category: "Eligibility",
+  subcategory: "Teacher eligibility",
+  country: "China",
+  region: "East Asia",
+  languages: ["Chinese"],
+  estimatedAnnualTakers: "high applicants",
+  testingWindow: "Mar/Sep",
+  schedulePattern: "2 cycles/year",
+  ageGroup: "18-35",
+  targetUser: "Teacher aspirant",
+  delivery: "Paper/computer mixed",
+  questionTypes: ["MCQ + essay"],
+  adaptivity: "Linear",
+  sections: "Pedagogy + subject",
+  scoringMode: "Pass/fail",
+  essayOrSpeaking: "Essay",
+  ipRisk: "Low",
+  contentReuse: "teacher_eligibility",
+  uiEngine: "objective_plus_written",
+  monetizationPotential: "Medium",
+  tier: "Tier 4",
+  launchWave: "Wave 6",
+  themeColor: "#8B5CF6",
+  themeColorDark: "#7C3AED",
+  localizationComplexity: "Low",
+  offlineNeeded: false,
+  mobileFirst: true,
+  locale: "zh-CN",
+  isRTL: false,
+  freemiumGate: {
+    dailyQuestions: 10,
+  },
+} as const;
+
+export type ExamConfig = typeof EXAM_CONFIG;
